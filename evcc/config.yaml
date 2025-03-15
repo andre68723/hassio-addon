@@ -1,6 +1,6 @@
 ---
 name: evcc
-version: 0.200.95
+version: 0.200.20250315
 slug: evcc
 description: EV Charge Controller!
 url: https://github.com/evcc-io/evcc
