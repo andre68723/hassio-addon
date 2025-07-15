@@ -1,10 +1,10 @@
 ---
 name: evcc
-version: 0.205.0
+version: 0.200.20250824
 slug: evcc
 description: EV Charge Controller!
 url: https://github.com/evcc-io/evcc
-arch: 
+arch:
   - armhf
   - armv7
   - aarch64
@@ -20,15 +20,15 @@ ingress: true
 ingress_port: 7070
 init: false
 watchdog: http://[HOST]:[PORT:7070]/
-image: evcc/evcc
-options: 
+image: andre68/evcc-alfen
+options:
   config_file: /config/evcc.yaml
   sqlite_file: /data/evcc.db
 schema:
   config_file: str
   sqlite_file: str
 host_network: true
-map: 
+map:
   - type: addon_config
     read_only: False
   - type: homeassistant_config
